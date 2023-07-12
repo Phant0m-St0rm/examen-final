@@ -1,0 +1,96 @@
+a=1
+while a==1:
+  print("bienvenido a creativos.cl ")
+  print(" opcion 1: comprar entradas")
+  print(" opcion 2: mostrar ubicaciones disponibles")
+  print(" opcion 3: ver listado de asistentes")
+  print(" opcion 4: mostrar ganancias totales")
+  print(" opcion 5: salir")
+  num=int(input(" seleccione una opcion "))
+  if num ==1:
+    print(" __________________________")
+    print("| Tipo de entrada | precio |")
+    print("|_________________|________|")
+    print("|   platinum      |$120.000|")
+    print("|_________________|________|")
+    print("|   Gold          |$80.000 |")
+    print("|_________________|________|")
+    print("|   Silver        |$50.000 |")
+    print("|_________________|________|")
+    num=int(input(" seleccione el tipo de entrada "))
+  if num ==1:
+    print("has seleccionado la entrada de tipo platinum")
+    a=int(input("cuantas entraras desea"))
+    if a<3 or a==1 or a==3  :
+      print("ha seleccionado", a, "entradas")
+      print("seleccione sus asientos")
+      print("1   2   3   4   5   6   7   8   9   10")
+      print("11  12  13  14  15  16  17  18  19  20")
+      for asi in range(a):
+        print(a)
+        asi=int(input(" seleccione su asiento "))
+      rut=int(input("ingrese su rut "))
+    platinum=a
+    if a<0:
+      print("la cantidad es mayor a la cantidad limite o no has seleccionado dentro del rango")
+  if num==2:
+    print("has seleccionado la entrada Gold")
+    a=int(input("cuantas entrada desea"))
+    if a<3 or a==1 or a==3  :
+      print("ha selecionado", a,"entradas")
+      print("21  22  23  24  25  26  27  28  29  30")
+      print("31  32  33  34  35  36  37  38  39  40")
+      print("41  42  43  44  45  46  47  48  49  50")
+      for asi in range(a):
+        print(a)
+        asi=int(input(" seleccione su asiento "))
+        rut=int(input("ingrese su rut "))
+      Gold=a
+    else:
+      print("la cantidad seleccionada no esta en el limite")
+  if num==3:
+    print("ha seleccionado la entrada Silver")
+    a=int(input("cuantas entradas desea"))
+    if a<3 or a==1 or a==3  :
+      print("ha seleccionado", a,"entradas")
+      print("51  52  53  54  55  56  57  58  59  60")
+      print("61  62  63  64  65  66  67  68  69  70")
+      print("71  72  73  74  75  76  77  78  79  80")
+      print("81  82  83  84  85  86  87  88  89  90")
+      print("91  92  93  94  95  96  97  98  99  100")
+      for asi in range(a):
+        print(a)
+        asi=int(input(" seleccione su asiento "))
+        rut=int(input("ingrese su rut "))
+      Silver=a
+    else:
+      print("la cantidad seleccionada no esta en el limite")
+  if num==2:
+    print("se mostraran los lugares disponobles")
+    print("1   2   3   4  5  6  7  8  9  10")
+    print("11  12  13  14  15  16  17  18  19  20")
+    print("21  22  23  24  25  26  27  28  29  30")
+    print("31  32  33  34  35  36  37  38  39  40")
+    print("41  42  43  44  45  46  47  48  49  50")
+    print("51  52  53  54  55  56  57  58  59  60")
+    print("61  62  63  64  65  66  67  68  69  70")
+    print("71  72  73  74  75  76  77  78  79  80")
+    print("81  82  83  84  85  86  87  88  89  90")
+    print("91  92  93  94  95  96  97  98  99  100")
+  if num==3:
+    print("listado de asistentes")
+    print("no se hacerlo")
+  if num==4:
+    print("se mostrara el total a pagar")
+    print(" __________________________________________________")
+    print("| Tipo de entrada | precio |  cantidad | total     |")
+    print("|_________________|________|___________|___________|")
+    print("|   platinum      |$120.000|", platinum,"        |",120000*platinum,"   |")
+    print("|_________________|________|___________|___________|")
+    print("|   Gold          |$80.000 |", Gold,"        |",80000*Gold,"   |")
+    print("|_________________|________|___________|___________|")
+    print("|   Silver        |$50.000 |", Silver,"        |",50000*Silver,"    |")
+    print("|_________________|________|___________|___________|")  
+  if num==5:
+    print("usted esta saliendo del sistema")
+    break
